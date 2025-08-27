@@ -1,0 +1,13 @@
+Lista de Exercícios de Java (Comandos Básicos de Interação)
+
+
+1) Cumprimento simples: Leia seu nome completo e imprima 'Olá, ! Bem-vindo(a) ao Java.'
+2) Soma de dois inteiros: Leia dois inteiros e mostre a soma.
+3) Média aritmética: Leia três números reais e mostre a média aritmética.
+4) Conversor Celsius → Fahrenheit: Leia a temperatura em °C e exiba em °F (F = C * 9/5 + 32).
+5) Área e perímetro do retângulo: Leia base e altura e mostre área e perímetro.
+6) Área do círculo: Leia o raio e mostre a área do círculo (A = πr2).
+7) Idade em dias: Leia sua idade em anos e mostre a idade aproximada em dias (365 dias/ano).
+8) Minutos → horas e minutos: Leia um total de minutos e mostre em horas e minutos.
+9) Juros simples: Leia capital (C), taxa em % ao mês (i) e tempo (n). Mostre o montante (M = C * (1+ i/100 * n)).
+10) Salário com bônus: Leia o salário base e bônus em % e mostre o salário final.

@@ -1,0 +1,26 @@
+AULA 1 - EXERCÍCIOS
+
+1. Salário do Funcionário: Crie um programa que pergunte o nome de um funcionário e seu salário. Em seguida, exiba uma mensagem personalizada mostrando o nome do funcionário e seu respectivo salário.
+
+2. Antecessor e Sucessor: Faça um programa que leia um número inteiro e mostre na tela o seu antecessor e sucessor.
+
+3. Dobro e Terça Parte: Escreva um algoritmo que leia um número real e calcule o dobro e a terça parte desse número. Exiba os resultados na tela, formatando a terça parte com quatro casas decimais.
+
+4. Conversor de Medidas: Crie um programa que leia uma distância em metros e exiba essa distância convertida em quilômetros e centímetros.
+
+5. Conversor de Moedas: Imagine que você está indo viajar para os Estados Unidos e precisa converter seus reais em dólares. Crie um programa que pergunte quantos reais você tem na carteira e mostre quantos dólares você poderá comprar, considerando a cotação do dólar a R$ 5,45. Formate a saída para mostrar o valor em dólares com duas casas decimais.
+
+6. Pintando a Parede: Sua mãe decidiu pintar uma parede do seu quarto e precisa calcular a quantidade de tinta necessária. Sabendo que cada litro de tinta pinta 2 metros quadrados, crie um programa que pergunte a altura e largura da parede, calcule a área e exiba quantos litros de tinta serão necessários.
+
+8. Desconto no Produto: Uma loja está oferecendo 5% de desconto em todos os seus produtos. Crie um programa que pergunte o valor de um produto e calcule o novo valor com o desconto aplicado. Exiba o resultado formatado com duas casas decimais.
+
+9. Aluguel de Carros: Uma locadora de carros cobra R$ 90 por dia de aluguel e R$ 0,20 por quilômetro rodado. Crie um programa que pergunte quantos quilômetros foram percorridos e por quantos dias o carro foi alugado. Calcule o preço total do aluguel e exiba o resultado na tela.
+
+10. Salário do Cupincha: O Cupincha, mascote do nosso time, precisa calcular seu novo salário! Ele ganha R$ 25 por hora e trabalha 8 horas por dia. Crie um programa que pergunte quantos dias ele trabalhou e calcule seu novo salário.
+
+11. Multa por Excesso de Velocidade: Em uma rodovia, a velocidade máxima permitida é de 80 km/h. Crie um programa que pergunte a velocidade de um carro e calcule a multa, caso o motorista tenha excedido o limite. A multa é de R$ 5 por cada km/h acima do limite. Exiba uma mensagem informando se o motorista foi multado e, em caso afirmativo, qual o valor da multa.
+
+12. Direito ao Voto: Crie um programa que pergunte o ano de nascimento de uma pessoa e determine se ela já tem idade para votar (16 anos ou mais). Exiba uma mensagem informando se a pessoa tem direito ao voto.
+
+13. Aprovado ou Reprovado: Escreva um programa que pergunte o nome de um aluno e suas duas notas. Calcule a média e exiba uma mensagem informando se o aluno foi aprovado (média 7 ou superior).
+
