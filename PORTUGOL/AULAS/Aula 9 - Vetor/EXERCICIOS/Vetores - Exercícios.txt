@@ -1,0 +1,17 @@
+EXERCÍCIOS DE VETOR EM PORTUGOL (VISUALG)
+
+1) Leia 5 notas (real), calcule a média e mostre quantas notas foram maiores ou iguais a 7. 
+
+2) Ler 8 números e dizer se um valor X aparece (e em quais posições) 
+
+3) Leia 5 números inteiros em um vetor e depois mostre: 
+ a) na ordem que foram digitados 
+ b) na ordem inversa 
+
+4) Leia 6 notas (reais) em um vetor. Calcule e mostre a média e quantas notas são maiores ou iguais a 7. 
+
+5) Leia 8 números inteiros em um vetor. Depois leia um valor X e diga em quais posições X aparece. Se não aparecer, mostre “Não encontrado”. 
+
+6) Leia 10 inteiros e mostre o maior e o menor valor do vetor, junto com as posições (primeira ocorrência). 
+
+7) Leia dois vetores A e B de 5 inteiros cada. Crie o vetor C tal que C[i] = A[i] + B[i]. Mostre os três vetores. 

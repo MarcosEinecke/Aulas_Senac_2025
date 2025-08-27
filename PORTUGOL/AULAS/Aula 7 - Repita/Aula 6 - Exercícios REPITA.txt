@@ -1,0 +1,19 @@
+## Aula 6 - Exercícios ##
+
+5 Exercícios com Repita no VisualG:
+
+Exercício 1: Soma de números até o usuário digitar 0
+Criar um algoritmo que leia vários números inteiros e calcule a soma deles, parando quando o usuário digitar o número 0.
+
+Exercício 2: Média de notas com validação
+Criar um algoritmo que leia 4 notas de um aluno, validando se as notas estão entre 0 e 10. Calcular e exibir a média das notas.
+
+Exercício 3*: Contagem regressiva com pausa
+Criar um algoritmo que faça uma contagem regressiva de 10 a 1, com um intervalo de 1 segundo entre cada número.
+
+Exercício 4*: Menu de opções com repita
+Criar um menu de opções com as seguintes escolhas: 1- Cadastrar, 2- Consultar, 3- Sair. O programa deve repetir a exibição do menu e a leitura da opção até que o usuário escolha a opção 3 (Sair).
+
+Exercício 5: Jogo de adivinhação com repita
+Criar um jogo de adivinhação onde o programa gera um número aleatório entre 1 e 100, e o usuário tenta adivinhar. O programa deve fornecer dicas (maior ou menor) e contar as tentativas. O jogo termina quando o usuário acerta o número.
+

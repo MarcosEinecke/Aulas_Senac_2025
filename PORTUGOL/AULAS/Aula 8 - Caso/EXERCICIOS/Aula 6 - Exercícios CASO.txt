@@ -1,0 +1,16 @@
+5 Exercícios com CASO no VisualG:
+
+Exercício 1: Calculadora Simples
+Criar uma calculadora simples que permita ao usuário escolher entre as operações de soma, subtração, multiplicação e divisão. O programa deve ler dois números e, de acordo com a escolha do usuário, realizar a operação e exibir o resultado.
+
+Exercício 2: Dia da Semana
+Criar um algoritmo que leia um número de 1 a 7 e exiba o dia da semana correspondente (1-Domingo, 2-Segunda,..., 7-Sábado).
+
+Exercício 3: Classificação de Triângulos
+Criar um algoritmo que leia três lados de um triângulo e classifique-o como equilátero, isósceles ou escaleno.
+
+Exercício 4: Menu de Bebidas
+Criar um algoritmo que simule um menu de bebidas com as opções: 1- Refrigerante, 2- Suco, 3- Água. O programa deve ler a escolha do usuário e exibir a bebida selecionada.
+
+Exercício 5: Cálculo de IMC com CASO
+Calcular o Índice de Massa Corporal (IMC) de uma pessoa e classificá-la de acordo com a tabela de IMC, utilizando a estrutura CASO.

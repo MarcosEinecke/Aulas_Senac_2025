@@ -1,0 +1,183 @@
+## Aula 6 - Exercícios do Slide ##
+
+Slide 9 - Exercício 1: Contagem de 10 a 0
+
+algoritmo "ContagemDecrescente"
+var
+  contador: inteiro
+inicio
+  contador <- 10
+  enquanto (contador >= 0) faca
+    escreval(contador)
+    contador <- contador - 1
+  fimenquanto
+fimalgoritmo
+
+
+Slide 10 - Exercício 2: Contagem até um número definido pelo usuário
+
+
+algoritmo "ContagemUsuario"
+var
+  numero, contador: inteiro
+inicio
+  escreva("Digite um número: ")
+  leia(numero)
+
+  contador <- 0
+  enquanto (contador <= numero) faca
+    escreval(contador)
+    contador <- contador + 1
+  fimenquanto
+fimalgoritmo
+
+
+Slide 11 - Exercício 3: Contagem com incremento definido pelo usuário
+
+algoritmo "ContagemVariada"
+var
+  inicio, fim, incremento, contador: inteiro
+inicio
+  escreva("Digite o número inicial: ")
+  leia(inicio)
+  escreva("Digite o número final: ")
+  leia(fim)
+  escreva("Digite o incremento: ")
+  leia(incremento)
+
+  contador <- inicio
+  enquanto (contador <= fim) faca
+    escreval(contador)
+    contador <- contador + incremento
+  fimenquanto
+fimalgoritmo
+
+--
+
+5. Faça um algoritmo que pergunte quantas vezes o usuário quer converter Reais para Dólares e mostre os valores digitados, convertidos.
+
+O código final deve ficar assim:
+
+Quantas vezes você quer converter? 2
+Qual é o valor em R$? 1
+O valor convertido é US$ 5.45
+Qual é o valor em R$? 8
+O valor convertido é US$ 43,60
+
+algoritmo "ConversorReaisDolares"
+var
+  vezes, contador: inteiro
+  valorReais, valorDolares: real
+  cotacaoDolar: real
+inicio
+  cotacaoDolar <- 5.45 // Defina a cotação do dólar aqui
+  escreva("Quantas vezes você quer converter? ")
+  leia(vezes)
+
+  contador <- 1
+  enquanto (contador <= vezes) faca
+    escreva("Qual é o valor em R$? ")
+    leia(valorReais)
+    valorDolares <- valorReais / cotacaoDolar
+    escreval("O valor convertido é US$ ", valorDolares:4:2)
+    contador <- contador + 1
+  fimenquanto
+
+fimalgoritmo
+
+6. Faça um algoritmo que realize uma contagem inteligente permitindo que usuário possa escolher o inicio e fim da contagem. Podendo ser crescente ou decrescente.
+
+algoritmo "ContagemInteligente"
+var
+  inicio, fim, contador: inteiro
+inicio
+  escreva("CONTAGEM INTELIGENTE")
+  escreval("--------------------")
+  escreva("Inicio: ")
+  leia(inicio)
+  escreva("Fim: ")
+  leia(fim)
+  escreval("--------------------")
+  escreval("     CONTANDO")
+  escreval("--------------------")
+
+  contador <- inicio
+
+  se (inicio < fim) entao
+    enquanto (contador <= fim) faca
+      escreva(contador, ".. ")
+      contador <- contador + 1
+    fimenquanto
+  senao
+    enquanto (contador >= fim) faca
+      escreva(contador, ".. ")
+      contador <- contador - 1
+    fimenquanto
+  fimse
+
+  escreval("")
+
+fimalgoritmo
+
+
+7.Faça um algoritmo que mostre o(a) melhor aluno(a) da turma.
+
+
+ ESCOLA SO DE GENIOS
+--------------------
+Quantos alunos tem na turma? 4
+--------------------
+ALUNO 1
+Nome do aluno: Carlos
+Nota de Carlos: 8.5
+--------------------
+ALUNO 2
+Nome do aluno: Paulo
+Nota de Carlos: 5.5
+--------------------
+ALUNO 3
+Nome do aluno: Ana
+Nota de Carlos: 7
+--------------------
+ALUNO 4
+Nome do aluno: Otavio
+Nota de Carlos: 0
+--------------------
+O melhor aproveitamento foi de Carlos com a nota 8.5
+*** Fim da execução.
+
+
+algoritmo "MelhorAluno"
+var
+  numAlunos, contador: inteiro
+  nome, melhorAluno: caractere
+  nota, maiorNota: real
+inicio
+  escreva("ESCOLA SO DE GENIOS")
+  escreval("--------------------")
+  escreva("Quantos alunos tem na turma? ")
+  leia(numAlunos)
+
+  contador <- 1
+  maiorNota <- 0
+
+  enquanto (contador <= numAlunos) faca
+    escreval("--------------------")
+    escreval("ALUNO ", contador)
+    escreva("Nome do aluno: ")
+    leia(nome)
+    escreva("Nota de ", nome, ": ")
+    leia(nota)
+
+    se (nota > maiorNota) entao
+      maiorNota <- nota
+      melhorAluno <- nome
+    fimse
+
+    contador <- contador + 1
+  fimenquanto
+
+  escreval("--------------------")
+  escreval("O melhor aproveitamento foi de ", melhorAluno, " com a nota ", maiorNota:4:2)
+
+fimalgoritmo
