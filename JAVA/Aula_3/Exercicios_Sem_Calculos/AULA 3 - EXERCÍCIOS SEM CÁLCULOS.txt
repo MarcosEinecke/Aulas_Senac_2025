@@ -1,0 +1,29 @@
+AULA 3 - EXERCÍCIOS SEM CÁLCULOS [GABARITO]
+
+1. Verificador de Nome: Faça um programa que leia o nome de uma pessoa e verifique se ele contém mais de 5 caracteres. Mostre uma mensagem apropriada. DICA: "if (nome.length() > 5)"
+
+2. Saudação Personalizada: Crie um programa que pergunte o nome e o turno em que a pessoa estuda (Manhã, Tarde ou Noite) e exiba uma saudação personalizada. DICA: "if (turno.equalsIgnoreCase("
+
+3. Inversor de Palavra: Faça um programa que leia uma palavra e a exiba invertida. DICA:" String invertida = new StringBuilder(palavra).reverse().toString();"
+
+4. Verificador de Vogais: Crie um programa que leia uma palavra e informe se ela contém pelo menos uma vogal (a, e, i, o, u). 
+VAMOS FAZER JUNTO!!
+
+5. Classificador de Login: Faça um programa que leia um login e informe se ele é "válido" (contém pelo menos 6 caracteres e não tem espaços) ou "inválido". DICA: "if (login.length() >= 6 && !login.contains(" ")) {"
+
+6. Comparador de Palavras: Crie um programa que leia duas palavras e informe se elas são iguais (ignorando maiúsculas/minúsculas).
+DICA: " if (palavra1.equalsIgnoreCase(palavra2)) {"
+
+7. Verificador de Dia da Semana
+Enunciado: Faça um programa que leia um dia da semana (ex.: "segunda") e informe se é um dia útil ou de fim de semana.
+DICA: "if (dia.equals("segunda") ||"
+
+8. Substituidor de Texto: Crie um programa que leia uma frase e substitua todas as ocorrências da palavra "Java" por "Programação".
+DICA: "String novaFrase = frase.replace("Java", "Programação");"
+
+9. Contador de Palavras: Faça um programa que leia uma frase e informe quantas palavras ela contém (palavras separadas por espaço). 
+VAMOS FAZER JUNTOS!
+
+10. Verificador de E-mail: Crie um programa que leia um e-mail e verifique se ele contém "@" e termina com ".com". 
+DICA:  if (email.contains("@") && email.endsWith(".com")) {
+
