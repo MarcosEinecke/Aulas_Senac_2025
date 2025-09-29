@@ -1,0 +1,40 @@
+Aula 4 - Exercícios
+
+1. Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos para todos, mas especialmente para mulheres. Faça um programa que leia nome, sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo que:
+   - Homens ganham 5% de desconto
+   - Mulheres ganham 13% de desconto
+
+2. Faça um algoritmo que pergunte a distância que um passageiro deseja percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para viagens até 200Km e R$0.45 para viagens mais longas.
+
+3. Escreva um algoritmo que leia dois números inteiros e compare-os, mostrando na tela uma das mensagens abaixo:
+   - O primeiro valor é o maior
+   - O segundo valor é o maior
+   - Não existe valor maior, os dois são iguais
+
+4. Crie um programa que leia duas notas de um aluno e calcule a sua média, mostrando uma mensagem no final, de acordo com a média atingida:
+   - Média até 4.9: REPROVADO
+   - Média entre 5.0 e 6.9: RECUPERAÇÃO
+   - Média 7.0 ou superior: APROVADO
+
+5. Faça um programa que leia a largura e o comprimento de um terreno retangular, calculando e mostrando a sua área em m². O programa também devemostrar a classificação desse terreno, de acordo com a lista abaixo:
+   - Abaixo de 100m² = TERRENO POPULAR
+   - Entre 100m² e 500m² = TERRENO MASTER
+   - Acima de 500m² = TERRENO VIP
+
+6. Desenvolva um programa que leia o nome de um funcionário, seu salário, quantos anos ele trabalha na empresa e mostre seu novo salário, reajustado de acordo com a tabela a seguir:
+   - Até 3 anos de empresa: aumento de 3%
+   - entre 3 e 10 anos: aumento de 12.5%
+   - 10 anos ou mais: aumento de 20%
+
+7. Escreva um programa para aprovar ou não o empréstimo bancário para a compra de uma casa. O programa vai perguntar o valor da casa, o salário do comprador e em quantos anos ele vai pagar. Calcule o valor da prestação mensal, sabendo que ela não pode exceder 30% do salário ou então o empréstimo será negado.
+
+8. O Índice de Massa Corpórea (IMC) é um valor calculado baseado na altura e no peso de uma pessoa. De acordo com o valor do IMC, podemos classificar o indivíduo dentro de certas faixas.
+
+  -   abaixo de 18.5: Abaixo do peso
+  -   entre 18.5 e 25: Peso ideal
+  -   entre 25 e 30: Sobrepeso
+  -   entre 30 e 40: Obesidade
+  -   acima de 40: Obseidade mórbida
+
+Obs: O IMC é calculado pela expressão peso/altura² (peso dividido pelo quadrado da altura)
+

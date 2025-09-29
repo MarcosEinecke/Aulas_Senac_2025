@@ -1,0 +1,32 @@
+Aula 2 [JAVA] [EXERCÍCIOS] - Funções Aritméticas - Operadores Relacionais - Operadores Lógicos
+
+Exercício 1 – Verificar se um número é par
+Utiliza boolean para determinar se um número inteiro é par.
+
+Exercício 2 – Verificar se um ano é bissexto
+Utiliza boolean para aplicar a regra de ano bissexto.
+
+Exercício 3 – Verificar se uma pessoa pode dirigir
+A pessoa deve ter 18 anos ou mais e possuir carteira de motorista (CNH).
+
+Exercício 4 – Calcular a hipotenusa de um triângulo retângulo
+Utiliza funções aritméticas da classe Math para calcular a hipotenusa.
+
+Exercício 5 – Verificar se um número está entre 10 e 20
+Utiliza operadores relacionais e lógicos para checar o intervalo.
+
+Exercício 6 – Determinar o maior de dois números
+Utiliza operadores relacionais para comparar dois valores.
+
+Exercício 7 – Verificar se três números podem formar um triângulo
+Aplica a condição do triângulo: cada lado deve ser menor que a soma dos outros dois.
+
+Exercício 8 – Verificar se um número é múltiplo de 3 ou de 7
+Utiliza o operador módulo junto com operadores lógicos para determinar a condição.
+
+Exercício 9 – Verificar se um aluno foi aprovado na disciplina
+Critérios: nota maior ou igual a 60 e frequência maior ou igual a 75%.
+
+Exercício 10 – Verificar se um valor está fora do intervalo [100, 200]
+Utiliza operadores relacionais e lógicos para identificar se um número não pertence ao intervalo.
+
