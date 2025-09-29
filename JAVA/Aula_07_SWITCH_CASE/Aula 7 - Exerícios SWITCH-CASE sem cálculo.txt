@@ -1,0 +1,59 @@
+Professor: Luís Guilherme de S. Lopes
+Curso: Técnico em informática
+Senac - RS / Tramandaí
+
+---
+
+Exercício 1: Sistema de Login por Perfil de Usuário
+Crie um programa que peça ao usuário o tipo de perfil de login:
+
+1 → Administrador
+2 → Editor
+3 → Visitante
+
+Use switch-case para exibir as permissões de cada perfil:
+
+Administrador: pode criar, editar e excluir.
+Editor: pode criar e editar.
+Visitante: apenas visualizar.
+
+Se for digitada uma opção inválida, mostre mensagem de erro.
+
+Exercício 2: Simulador de Assistente Virtual
+Crie um programa que apresente ao usuário um menu de opções:
+1 - Ver previsão do tempo
+2 - Ver notícias
+3 - Abrir agenda
+4 - Ouvir música
+Cada opção deve exibir uma mensagem simulando a resposta de um assistente virtual.
+Use switch-case para controlar o fluxo.
+
+Exercício 3: Sistema de Suporte Técnico
+Monte um programa que apresente ao usuário um menu com os seguintes problemas comuns:
+1 - Problema de internet
+2 - Problema de login
+3 - Erro no sistema
+4 - Solicitação de atualização
+Cada opção deve exibir uma mensagem de orientação ao usuário, como se fosse um chatbot de suporte.
+Se a opção for inválida, exiba “Opção não reconhecida, tente novamente.”
+
+Exercício 4: Menu de Controle de Dispositivos Inteligentes
+Crie um programa que exiba um menu para controlar dispositivos de uma casa inteligente:
+1 - Acender luzes
+2 - Apagar luzes
+3 - Ligar TV
+4 - Desligar TV
+5 - Abrir portão
+6 - Fechar portão
+
+Cada opção deve exibir a ação correspondente. Se for digitado um número inválido, exiba “Comando inválido.”
+
+Exercício 5: Sistema de Navegação em Aplicativo
+Implemente um programa que simule a navegação entre páginas de um aplicativo:
+1 - Página inicial
+2 - Perfil
+3 - Configurações
+4 - Notificações
+5 - Sair
+
+Cada opção deve mostrar a mensagem “Você está na página: …”. Se o usuário escolher “Sair”, mostre “Aplicativo encerrado.” e finalize o programa.
