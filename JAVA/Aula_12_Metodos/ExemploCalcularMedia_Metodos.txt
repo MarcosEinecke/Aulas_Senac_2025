@@ -1,0 +1,37 @@
+package Aula12_METODOS;
+
+import java.util.Scanner;
+
+/**
+ * Calcular a média de notas de diferentes alunos
+ * @author admin
+ */
+public class ExemploCalcularMedia_Metodos {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o número de alunos: ");
+        int numAlunos = sc.nextInt();
+        
+        for (int i = 1; i <= numAlunos; i++) {
+            System.out.print("\nDigite o número de notas para o aluno "+i+" :");
+            int numNotas = sc.nextInt();
+            double[]notas = new double[numNotas];
+            
+            for (int j = 0; j < numNotas; j++) {
+                System.out.print("\nDigite a nota "+(j+1)+": ");
+                notas[j]=sc.nextDouble();
+            }
+            //double media = soma / notas.length;
+            double media = calcularMedia(notas);
+            System.out.print("A média do aluno "+i+" é: "+media);
+        }
+    }
+
+    public static double calcularMedia(double[] notas) {
+        double soma=0;
+        for(double nota : notas){
+            soma += nota;
+        }
+        return soma / notas.length;
+    }
+}
