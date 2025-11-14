@@ -1,0 +1,135 @@
+Cenários:
+
+Empresa:
+funcionarios: id, nome, cargo, salario, departamento_id
+departamentos: id, nome
+
+Carro:
+carros: id, marca, modelo, ano, proprietario_id
+proprietarios: id, nome, idade
+
+Computador:
+computadores: id, marca, modelo, processador, memoria_ram,
+usuario_id
+usuarios: id, nome, email
+
+Celular:
+celulares: id, marca, modelo, sistema_operacional, proprietario_id
+
+RedesSociais:
+usuarios: id, nome, email
+posts: id, conteudo, data_publicacao, usuario_id
+comentarios: id, conteudo, data_publicacao, post_id, usuario_id
+
+--
+
+create table Comentarios(
+id int not null auto_increment, 
+conteudo varchar (30) not null,
+datas date,
+Post_id int,
+usuario_id int,
+foreign key (Post_id) references Posts(id),
+foreign key (usuario_id) references Usuarios(id),
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Posts(
+id int not null auto_increment, 
+conteudo varchar (30) not null,
+datas date,
+usuario_id int,
+foreign key (usuario_id) references Usuarios(id),
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Usuarios(
+id int not null auto_increment, 
+nome varchar (30) not null,
+email varchar (30) not null,
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Usuarios(
+id int not null auto_increment, 
+nome varchar (30) not null,
+primary key (id)
+)default charset = utf8mb4;
+
+
+
+create table Celulares(
+id int not null auto_increment, 
+marca varchar (30) not null,
+modelo varchar (30) not null,
+processador varchar (30),
+memoria_ram int,
+usuario_id int,
+foreign key (usuario_id) references Usuarios(id),
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Usuarios(
+id int not null auto_increment, 
+nome varchar (30) not null,
+email varchar (30) not null,
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Computadores(
+id int not null auto_increment, 
+marca varchar (30) not null,
+modelo varchar (30) not null,
+processador varchar (30),
+memoria_ram int,
+usuario_id int,
+foreign key (usuario_id) references Usuarios(id),
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Cliente(
+id int not null auto_increment, 
+nome varchar (30) not null,
+idade int,
+primary key (id)
+)default charset = utf8mb4;
+
+
+create table Carros(
+id int not null auto_increment, 
+marca varchar (30) not null,
+modelo varchar (30) not null,
+ano date,
+cliente_id int,
+foreign key (cliente_id) references Cliente(id),
+primary key (id)
+)default charset = utf8mb4;
+
+
+
+create table departamento(
+id int not null auto_increment, 
+nome varchar (30) not null,
+primary key (id)
+)default charset = utf8mb4;
+
+
+
+create table Funcionarios(
+id int not null auto_increment, 
+nome varchar (30) not null,
+cargo varchar (30) not null,
+admisao date,
+salario int,
+depart_id int,
+foreign key (depart_id) references departamento(id),
+primary key (id)
+)default charset = utf8mb4;
+
+
