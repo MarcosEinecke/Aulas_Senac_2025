@@ -1,0 +1,34 @@
+Exercícios de Herança
+
+1. Mídias
+Crie uma classe Mídia com os atributos título e duração.
+Crie subclasses Música, Filme e Jogo que herdam de Mídia e adicionam seus próprios atributos específicos:
+- Música: artista e álbum
+- Filme: diretor e gênero
+- Jogo: plataforma e classificação
+
+2. Eventos
+Crie uma classe Evento com os atributos nome e data.
+Crie subclasses Show, Palestra e Workshop que herdam de Evento e adicionam seus próprios atributos específicos:
+- Show: artista
+- Palestra: palestrante
+- Workshop: instrutor
+
+3. Funcionários: Crie uma classe Funcionario com os atributos nome, salario
+e cargo. Crie subclasses Gerente, Vendedor e Desenvolvedor que herdam de
+Funcionario e adicionam seus próprios atributos específicos (departamento
+para Gerente, comissão para Vendedor, linguagem de programação para
+Desenvolvedor).
+
+4. Eletrodomésticos
+Crie uma classe Eletrodoméstico com os atributos marca, modelo e ligado (booleano).
+Crie subclasses Televisão, Geladeira e Micro-ondas que herdam de Eletrodoméstico e adicionam seus próprios atributos e métodos específicos:
+- Televisão: canal e volume
+- Geladeira: temperatura
+- Micro-ondas: potência
+
+5. Dispositivos Eletrônicos
+Crie uma classe Dispositivo Eletrônico com os atributos marca e modelo.
+Crie subclasses Smartphone, Tablet e Notebook que herdam de Dispositivo Eletrônico e adicionam seus próprios atributos específicos:
+- Smartphone e Tablet: tamanho da tela
+- Notebook: capacidade de armazenamento

@@ -1,0 +1,7 @@
+Pessoas: Crie uma classe Pessoa com os atributos nome, idade e endereco. Crie subclasses Aluno, Professor e Funcionario que herdam de Pessoa e adicionam seus próprios atributos específicos (matricula para Aluno, disciplina para Professor, cargo para Funcionario).
+
+Usuários de um Sistema: Crie uma classe Usuario com os atributos nome
+e login. Crie subclasses Administrador, Editor e Leitor que herdam de Usuario
+e adicionam seus próprios atributos e métodos específicos (nível de acesso
+para Administrador, permissões de edição para Editor, histórico de leitura
+para Leitor).
