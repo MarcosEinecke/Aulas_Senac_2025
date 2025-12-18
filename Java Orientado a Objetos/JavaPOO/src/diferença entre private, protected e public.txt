@@ -1,0 +1,48 @@
+Em Java, os modificadores de acesso private, protected e public determinam a visibilidade de classes, métodos e atributos:
+
+private
+- Acesso restrito à própria classe.
+- Nenhuma outra classe (nem mesmo subclasses) pode acessar membros private.
+- Uso comum: encapsular dados e métodos que não devem ser acessados diretamente de fora da classe.
+
+
+class Pessoa {
+    private String nome;
+
+    private void mostrarNome() {
+        System.out.println(nome);
+    }
+}
+
+
+protected:
+- Acesso permitido dentro do mesmo pacote e também por subclasse, mesmo que estejam em pacotes diferentes.
+- Uso comum: permitir que subclasses acessem ou sobrescrevam métodos e atributos da superclasse.
+
+
+class Animal {
+    protected void emitirSom() {
+        System.out.println("Som genérico");
+    }
+}
+
+class Cachorro extends Animal {
+    void latir() {
+        emitirSom(); // permitido porque é protected
+    }
+}
+
+
+public:
+- Acesso irrestrito.
+- Qualquer classe, de qualquer pacote, pode acessar membros `public`, desde que a classe também seja acessível.
+- Uso comum: métodos e classes que devem ser acessíveis por qualquer parte do programa.
+
+
+public class Calculadora {
+    public int somar(int a, int b) {
+        return a + b;
+    }
+}
+
+

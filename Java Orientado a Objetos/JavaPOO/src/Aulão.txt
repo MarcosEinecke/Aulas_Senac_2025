@@ -1,0 +1,33 @@
+Aula 05 - Aulão - Java OOP
+
+1. Encapsulamento
+Crie uma classe Aluno com os atributos privados nome, matricula e notaFinal. Implemente os métodos get e set para cada atributo, garantindo que a notaFinal só possa ser atribuída se estiver entre 0 e 10.
+
+Objetivo: Compreender como proteger atributos com private e controlar o acesso via métodos públicos.
+
+2. Métodos Especiais (toString)
+Adicione o método toString() à classe Aluno para exibir os dados formatados, como: 
+Aluno: João - Matrícula: 12345 - Nota Final: 8.5
+
+Objetivo: Saber sobrescrever métodos para exibição personalizada dos objetos.
+
+3. Herança
+Crie uma classe Pessoa com nome e idade. Crie uma subclasse Professor com o atributo disciplina. Mostre como herdar os atributos da superclasse.
+
+Objetivo: Entender reutilização de código por herança.
+
+4. Interface
+Crie uma interface Avaliavel com o método avaliarDesempenho(). Implemente essa interface na classe Aluno, fazendo com que esse método retorne uma mensagem com base na nota final.
+
+Objetivo: Introduzir abstração e contratos de comportamento.
+
+5. Polimorfismo (sobrescrita)
+Sobrescreva o método avaliarDesempenho() para que Aluno e Professor retornem avaliações diferentes.
+
+Objetivo: Explorar o polimorfismo por sobrescrita (override).
+
+6. Modificadores de Acesso
+
+Explique o que aconteceria se os atributos fossem public ao invés de private. Faça comparações práticas e conceituais entre os modificadores private, protected, public e (sem modificador).
+
+Objetivo: Compreender visibilidade e boas práticas em orientação a objetos.

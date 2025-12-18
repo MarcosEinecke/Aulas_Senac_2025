@@ -1,0 +1,21 @@
+Avaliação Prática - Java OOP (Tema: E-commerce)
+Contexto: Você foi contratado para desenvolver o backend de um sistema de gestão de produtos e funcionários de uma loja virtual.
+
+1. Encapsulamento Crie uma classe chamada Produto com os atributos privados: nome (String), codigo (String) e preco (double). Implemente os métodos get e set. No método setPreco, adicione uma validação: o preço nunca pode ser negativo. Se tentarem atribuir um valor negativo, exiba uma mensagem de erro e não altere o valor.
+
+2. Métodos Especiais (toString) Sobrescreva o método toString() na classe Produto para exibir os dados de forma legível, exemplo: Produto: Teclado - Código: TEC-01 - Preço: R$ 150.00
+
+3. Herança Crie uma classe genérica Usuario com nome e id. Em seguida, crie uma subclasse chamada Vendedor que herde de Usuario e adicione o atributo metaVendas (double). Demonstre o uso do construtor da superclasse (super).
+
+4. Interface Crie uma interface chamada Promocional com o método aplicarPromocao().
+
+5. Polimorfismo e Implementação Crie uma classe ProdutoPromocional que herde de Produto e implemente a interface Promocional.
+No método aplicarPromocao(), se o preço for maior que R$ 100.00, retorne uma mensagem dizendo "Desconto de 10% aplicado". Caso contrário, "Sem desconto disponível".
+Crie também uma classe VendedorPromocional que herde de Vendedor e implemente Promocional.
+No método aplicarPromocao(), retorne "Bônus de meta ativado para o vendedor".
+
+6. Controle de Fluxo (Loop e Switch) Na classe principal (Main), crie um menu interativo usando a estrutura do-while ou while e switch-case. O menu deve permitir ao usuário:
+
+Testar um Produto.
+Testar um Vendedor.
+Sair do sistema.
