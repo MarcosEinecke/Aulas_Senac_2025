@@ -1,0 +1,72 @@
+<form action="oi.php" method="get">
+  <fieldset>
+    <legend>Cor Favorita</legend>
+    <input type="radio" name="cor" id="azul" value="azul" />
+    <label for="">Azul</label><br />
+
+    <input type="radio" name="cor" id="vermelho" value="vermelho"/>
+    <label for="">Vermelho</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Times</legend>
+    <input type="checkbox" name="time1" id="time1" value="gremio"/>
+    <label for="time1">Gremio</label><br />
+
+    <input type="checkbox" name="time2" id="time2" value="inter" />
+    <label for="time2">Inter</label><br />
+
+    <input type="checkbox" name="time3" id="time3" value="juventude"/>
+    <label for="time3">Juventude</label> <br />
+
+    <input type="checkbox" name="time4" id="time4" value="caxias"/>
+    <label for="time4">Caxias</label>
+  </fieldset>
+
+  <label for="estado">Estado</label>
+  <select name="estado" id="estado">
+    <option value="" selected disabled>Selecione</option>
+    <optgroup label="Região 1">
+      <option value="rs">Rio Grande do Sul</option>
+      <option value="sp">São Paulo</option>
+      <option value="rj">Rio de Janeiro</option>
+    </optgroup>
+    <optgroup label="Região 2">
+      <option value="rs">Santa Catarina</option>
+      <option value="sp">Minas Gerais</option>
+      <option value="rj">Bahia</option>
+    </optgroup>
+  </select>
+
+  <label for="jogador">Jogador favorito:</label>
+  <input type="text" name="joga" id="joga" list="listajogador" />
+  <datalist id="listajogador">
+    <option>Ronaldinho Gaucho</option>
+    <option>Ronaldo Fenomeno</option>
+    <option>Richard</option>
+    <option>Ednelson</option>
+  </datalist>
+  <br />
+  <label for="marcante">Informe um jogo marcante:</label><br />
+  <textarea name="marcante" id="marcante" cols="10" rows="2"></textarea>
+
+  <button type="submit">enviar</button>
+</form>
+
+<br /><br /><br /><br /><br /><br /><br />
+
+<h2>Entre em contato conosco</h2>
+
+<form>
+  <label>Nome</label>
+  <input type="text" /><br />
+  <label>Email</label>
+  <input type="email" /><br />
+  <label>Senha</label>
+  <input type="password" /><br />
+  <label>data</label>
+  <input type="date" /><br />
+  <input type="file" />
+
+  <button type="submit">Enviar</button>
+</form>
