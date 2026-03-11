@@ -1,0 +1,47 @@
+/* Container principal com layout de grade */
+.container {
+    display: grid;
+    /* Define o elemento como grid */
+
+    /* Define 2 colunas: sidebar 200px e conteúdo flexível */
+    grid-template-columns: 200px 1fr;
+
+    /* Define 3 linhas: header 80px, conteúdo flexível, footer 80px */
+    grid-template-rows: 80px 1fr 80px;
+
+    /* Define nomes para as áreas do grid */
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+
+    gap: 20px;
+    /* Espaço entre todos os itens */
+}
+
+/* Centraliza o conteúdo dos itens */
+.item {
+    place-items: center;
+    /* Centraliza horizontal e verticalmente */
+}
+
+/* Define cada área do grid */
+header {
+    grid-area: header;
+    /* Posiciona no espaço "header" */
+}
+
+aside {
+    grid-area: sidebar;
+    /* Posiciona no espaço "sidebar" */
+}
+
+main {
+    grid-area: content;
+    /* Posiciona no espaço "content" */
+}
+
+footer {
+    grid-area: footer;
+    /* Posiciona no espaço "footer" */
+}
