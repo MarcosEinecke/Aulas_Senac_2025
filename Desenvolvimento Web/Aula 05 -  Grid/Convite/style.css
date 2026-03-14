@@ -96,7 +96,15 @@
       width: 100%;
       height: 100%;
       border-radius: 10px;
+
   }
+
+  .image img:hover {
+      transform: scale(1.50);
+      transition: 0.3s;
+  }
+
+
 
   @media (max-width: 768px) {
       .container {
@@ -123,10 +131,17 @@
       margin-top: 40px;
       text-align: center;
       padding: 20px;
-      background-color:  rgba(202, 203, 204, 0.5);
+      /* background-color: rgba(202, 203, 204, 0.5);*/
       color: white;
-      width: 500px;
+      width: 80%;
       margin: 0 auto;
+      border-radius: 10px;
+  }
+
+
+  .programacao img {
+      width: 100%;
+      height: auto;
       border-radius: 10px;
 
   }
@@ -146,10 +161,16 @@
   }
 
 
+.img2-programacao {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+
+      
+  }
 
 
-
-
+  
 
 
   footer {
