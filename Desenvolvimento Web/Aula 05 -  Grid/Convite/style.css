@@ -164,10 +164,8 @@ div .div-titulo {
     margin: 0 auto;
     border-radius: 10px;
     width: 90%;
-
+    backdrop-filter: blur(1000px);
 }
-
-
 
 
 p {
