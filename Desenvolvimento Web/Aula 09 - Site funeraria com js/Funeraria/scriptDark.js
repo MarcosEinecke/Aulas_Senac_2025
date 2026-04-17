@@ -4,17 +4,19 @@ let btn = document.getElementById('toggleBtn');
 
 let stored = localStorage.getItem('theme');
 
+let imgPomba = document.getElementById('imgPomba');
+
 let preferDark = window.matchMedia && window.matchMedia('(prefers-color-shceme: dark)').matches;
 
 function applyTheme(theme){
 
     if(theme === 'dark'){
         html.classList.add('dark');
-        btn.innerText = 'Alterar Tema ☀️';
+        imgPomba.src = 'img/55.png';
     }else{
 
         html.classList.remove('dark');
-        btn.innerText = 'Alterar Tema 🌙';
+        imgPomba.src = 'img/pomba branca.png';
 
     }
 }
