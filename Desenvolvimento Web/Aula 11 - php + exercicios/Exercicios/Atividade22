@@ -1,0 +1,26 @@
+<?php
+//22. Crie um programa que percorra um vetor de 10 números e conte quantos são maiores que 50.
+
+$vetor = [10, 5, 8, 20, 15, 60, 70, 80, 90, 100];
+
+echo "\n **************  VAMOS DESCOBRIR QUANTOS NÚMEROS DO ARRAY SÃO MAIORES QUE 50 *************\n";
+
+
+foreach ($vetor as $lista) {
+    echo $lista . ",";
+}
+
+echo "\n ***************************************************************************************************\n";
+
+$contador = 0;  
+
+foreach ($vetor as $numero) {
+    if ($numero > 50) {
+        $contador++;
+    }
+}
+
+
+
+echo "Existem " . $contador . " números maiores que 50 no array.";
+

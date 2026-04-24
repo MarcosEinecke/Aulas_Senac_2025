@@ -1,0 +1,25 @@
+<?php
+//5.  Peça ao usuário uma nota (0 a 10). Se for maior ou igual a 7, exiba "Aprovado", senão "Reprovado".
+
+$nota = null;
+
+
+
+do {
+
+    echo "*******  DIGITE SUA NOTA PARA VER SE VOCÊ ESTÁ APROVADO OU REPROVADO: \n";
+    $nota = readline();
+
+    echo " Sua nota é $nota \n";
+
+} while ($nota < 0  ||  $nota > 10);
+
+
+
+if ($nota >= 7) {
+
+    echo "Parabéns você foi APROVADO.";
+} else {
+
+    echo "Que pena você foi REPROVADO.";
+}

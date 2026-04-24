@@ -1,0 +1,9 @@
+<?php
+//10. Use um for para imprimir os números de 10 até 1 (decrescente). 
+
+
+for ($i=10; $i > -1 ; $i--) { 
+
+    echo $i . "\n";
+    
+}

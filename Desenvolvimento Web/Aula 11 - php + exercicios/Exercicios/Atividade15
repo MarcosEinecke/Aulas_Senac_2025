@@ -1,0 +1,17 @@
+<?php
+//15. Crie um programa que mostre a tabuada de um número usando while.
+
+$soma = 0;
+$x = 0;
+
+
+echo "\n *********  TABUADA DO 5 ******\n";
+
+while ($x <= 10) {
+
+    echo " $x x  5 = " . $soma = $x*5 . "\n";
+
+    $x ++;
+
+}
+

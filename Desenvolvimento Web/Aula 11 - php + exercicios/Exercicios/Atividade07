@@ -1,0 +1,11 @@
+<?php
+//7.  Crie um programa que exiba apenas os números pares de 1 a 20 usando for.
+
+
+
+for ($i = 0; $i < 21; $i++) {
+
+    if ($i % 2 == 0) {
+        echo $i . ",";
+    }
+}

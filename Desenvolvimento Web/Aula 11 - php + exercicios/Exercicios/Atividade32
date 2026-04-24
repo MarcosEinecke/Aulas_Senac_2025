@@ -1,0 +1,17 @@
+<?php
+//32. Faça um programa que percorra um vetor de nomes e crie outro vetor apenas com os nomes que tenham mais de 5 letras.
+
+$nomes = ['Ana', 'Julia', 'João', 'Marcos', 'Jorge', 'João Pedro'];
+$ArrayNomes = [];
+
+foreach ($nomes as $nome) {
+    if (strlen($nome) > 5) {
+        $ArrayNomes[] = $nome;
+    }
+}
+
+
+echo "**** NOMES COM MAIS DE 5 LETRAS ****\n";
+foreach ($ArrayNomes as $nome) {
+    echo $nome . "\n";
+}

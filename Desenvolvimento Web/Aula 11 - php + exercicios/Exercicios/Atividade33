@@ -1,0 +1,17 @@
+<?php
+//33. Crie um programa que gere a sequência de Fibonacci (até o 10º termo) e armazene em um vetor.
+
+
+$finonacci = [0, 1];
+
+for ($i = 2; $i < 10; $i++) {
+    $finonacci[$i] = $finonacci[$i - 1] + $finonacci[$i - 2];
+}
+
+
+echo "Sequência de Fibonacci (até o 10º termo):\n";
+foreach ($finonacci as $termo) {    
+    echo $termo . ",";
+}   
+
+?>

@@ -1,0 +1,26 @@
+<?php
+//30. Crie um programa que peça notas ao usuário até que ele digite -1. Armazene em um vetor e calcule a média.
+
+
+$notas = [];
+
+$x = 1; 
+
+while ($x != 0) {
+
+    echo "Digite uma nota (ou -1 para sair): ";
+    $nota = readline();
+    
+    if ($nota == -1) {
+        break;
+    }
+    
+    $notas[] = $nota;
+}
+
+if (count($notas) > 0) {
+    $media = array_sum($notas) / count($notas);
+    echo "A média das notas é: " . $media;
+} else {
+    echo "Nenhuma nota foi digitada.";
+}

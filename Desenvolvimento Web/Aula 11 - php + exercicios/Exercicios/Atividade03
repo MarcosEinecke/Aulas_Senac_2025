@@ -1,0 +1,13 @@
+<?php
+//3.  Dado um número $x = 10, use if para verificar se ele é par ou ímpar.
+
+
+$x = 10;
+
+if ($x % 2 == 0) {
+    echo "O número $x é par.";
+} else {
+    echo "O número $x é impar.";
+}
+
+?>

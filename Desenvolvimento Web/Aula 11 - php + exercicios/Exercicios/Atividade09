@@ -1,0 +1,9 @@
+<?php
+//9.  Crie um programa que mostre a tabuada do 5 usando for.
+
+
+
+for ($i=0; $i <11 ; $i++) { 
+    echo "$i x 5 = " . ($i*5) . " \n";   
+
+}

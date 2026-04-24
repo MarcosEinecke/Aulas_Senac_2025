@@ -1,0 +1,12 @@
+<?php
+//6.  Use um for para mostrar os números de 1 a 10.
+
+
+echo "******** CONTADOR DE  0 A  10  ********\n";
+
+for ($i=-1; $i < 11; $i++) { 
+    echo $i . " \n";
+}
+
+
+

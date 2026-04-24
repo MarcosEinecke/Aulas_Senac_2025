@@ -1,0 +1,16 @@
+<?php
+//12. Crie um programa que peça um número ao usuário e continue pedindo até que ele digite 0.
+
+
+echo "******  INFORME NÚMEROS (APARTE 0 PARA SAIR) *******";
+
+$a = 1;
+
+while ($a != 0) {
+
+    $cont = 0;
+    $cont = $cont + 1;
+
+    echo " Digite o  " . $cont . "º número : ";
+    $a = readline();
+}

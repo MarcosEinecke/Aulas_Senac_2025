@@ -1,0 +1,16 @@
+<?php
+//2. Verifique se uma variável $idade = 18 é maior ou igual a 18. Se for, mostre "Maiorde idade"
+
+
+echo 'Qual sua idade ? ';
+
+$idade = readline();
+
+if ($idade == 18 || $idade > 18) {
+    echo 'Você é maior de idade.';
+} else {
+
+    echo 'Você não tem dezoito anos.';
+}
+
+?>

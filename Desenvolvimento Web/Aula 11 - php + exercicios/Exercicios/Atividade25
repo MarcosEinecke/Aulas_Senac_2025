@@ -1,0 +1,14 @@
+<?php
+//25. Crie um programa que percorra um vetor de nomes e exiba apenas os que começam com a letra "A".
+
+
+$nomes = ["Ana", "Bruno", "Alice", "Carlos", "Amanda", "David"];
+
+echo "Nomes que começam com a letra 'A':\n";
+
+foreach ($nomes as $nome) {
+    if (stripos($nome, 'A') === 0) {
+        echo $nome . "\n";
+    }
+}
+

@@ -1,0 +1,42 @@
+<?php
+//13. Faça um programa que gere um número aleatório entre 1 e 10 e peça tentativas ao usuário até ele acertar.
+
+
+$tentaivas;
+$n = random_int(1, 10);
+$palpite;
+
+do {
+
+
+    echo "\n*********  JOGO DA ADIVINHAÇÃO *********\n";
+
+    echo "****** INFORME UM NÚMERO DE 1 A 10 ********\n";
+
+    echo "Antes, informe o número de tentativas: \n";
+    $tentaivas = readline();
+
+    echo " \nVocê vai ter " . $tentaivas . " tentativas.\n";
+
+
+    for ($i = 0; $i < $tentaivas; $i++) {
+
+        echo "\nInforme um número: ";
+        $palpite = readline();
+
+
+
+
+        if ($palpite == $n) {
+            echo "\nPARABÉNS você acertou, o númeoro é " . $n . ".\n";
+            $sair = 1;
+            break;
+        } else {
+            echo "Que pena o número  " . $palpite . " não é o número certo. Tente novamento.\n";
+        }
+
+        if ($i == $tentaivas - 1) {
+            echo " \nInfelizmeente você PERDEU ☠️";
+        }
+    }
+} while ($sair = 1);

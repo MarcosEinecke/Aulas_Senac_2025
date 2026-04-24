@@ -1,0 +1,20 @@
+<?php
+//23. Faça um programa que percorra um vetor de notas e calcule a média da turma.
+
+$notas = [7.5, 8.0, 6.5, 9.0, 7.0, 8.5, 6.0, 7.8, 8.2, 9.5];
+
+echo "\n **************  VAMOS CALCULAR A MÉDIA DA TURMA *************\n";
+
+foreach ($notas as $nota) {
+    echo $nota . ",";
+}   
+
+
+echo "\n ***************************************************************************************************\n";
+
+$soma = array_sum($notas);
+
+$media = $soma / count($notas);
+
+echo "A média da turma é: " . $media;
+

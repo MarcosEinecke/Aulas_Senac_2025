@@ -1,0 +1,74 @@
+<?php
+//31. Crie um programa que receba 5 números, some todos e mostre o maior e o menor valor
+
+
+echo "********  SOMADOR DE NÚMEROS: ********\n";
+
+echo " Informe 5 número : \n";
+echo " 1º número: \n";
+$numero1 = readline();
+
+echo " 2º número: \n";
+$numero2 = readline();
+
+
+echo " 3º número: \n";
+$numero3 = readline();
+
+echo " 4º número: \n";
+$numero4 = readline();
+
+
+echo " 5º número: \n";
+$numero5 = readline();
+
+
+
+echo " A soma dos valores é : " . ($numero1 + $numero2 + $numero3 + $numero4 + $numero5) . "\n";
+
+$maior = $numero1;
+$menor = $numero1;
+
+if ( $numero2 > $maior ) {
+        $maior = $numero2;
+
+}
+
+if ( $numero3 > $maior ) {
+        $maior = $numero3;
+
+}
+
+if ( $numero4 > $maior ) {
+        $maior = $numero4;
+
+}
+
+if ( $numero5 > $maior ) {
+        $maior = $numero5;
+
+}
+
+
+if ($numero2 < $menor) {
+    $menor = $numero2;
+}
+
+if ($numero3 < $menor) {
+    $menor = $numero3;
+}
+
+if ($numero4 < $menor) {
+    $menor = $numero4;
+}
+
+if ($numero5 < $menor) {
+    $menor = $numero5;
+}
+
+echo "Esse é o menor  $menor número \n";
+
+echo "Esse é o maior  $maior número \n";
+
+
+?>

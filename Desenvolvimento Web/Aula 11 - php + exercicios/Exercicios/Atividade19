@@ -1,0 +1,23 @@
+<?php
+//19. Faça um programa que verifique se um nome está presente em um vetor de nomes.
+
+$nomes = ["Marcos", "João", "Pedro", "Jorge", "Ana", "Carla"];
+
+echo "\n*******  ARRAY DE NOMES *****\n";
+
+
+
+foreach ($nomes as $nome) {
+    echo  $nome . "\n";
+}
+
+echo "\n Informe um dos nome do Array , para ver se ele é presente: ";
+$procura = readline();
+
+if (array_search($procura, $nomes) ){
+    echo "Está presente";
+}else {
+    Echo "Não está presente";
+}
+
+

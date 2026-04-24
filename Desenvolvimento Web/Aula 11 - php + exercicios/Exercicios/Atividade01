@@ -1,0 +1,13 @@
+
+<?php
+//1. Crie um programa que receba um número e mostre se ele é positivo.
+
+
+$nome;
+
+echo "Qual  seu nome ? ";
+$nome = readline();
+
+echo ($nome);
+
+?>

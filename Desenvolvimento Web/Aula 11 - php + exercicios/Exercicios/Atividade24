@@ -1,0 +1,20 @@
+<?php
+//24. Crie um programa que peça 5 números ao usuário e armazene em um vetor. Depois, exiba-os em ordem inversa.
+
+$numeros = [];
+
+echo "\n **********************************************************************************\n";
+
+
+for ($i = 0; $i < 5; $i++) {
+    $numeros[] = readline("Digite um número: ");
+}   
+
+echo "Números em ordem inversa:\n";
+
+for ($i = count($numeros) - 1; $i >= 0; $i--) {
+    echo $numeros[$i] . "\n";
+}
+
+
+

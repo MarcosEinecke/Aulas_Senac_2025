@@ -1,0 +1,34 @@
+<?php
+//4.  Faça um programa que receba duas variáveis $a e $b. Mostre qual delas é a maior.
+
+
+$A;
+$B;
+
+echo "********  INFORME 2 NÚMEROS PARA VER QUAL É MAIOR  ********\n";
+
+echo "Infome o 1º número: \n";
+$A = readline();
+
+echo "Informe o 2º número: \n";
+$B = readline();
+
+if ( $A > $B){
+
+echo "O número $A é maior que o número $B \n";
+
+}
+
+if ( $A < $B){
+
+echo "O número $B é maior que o número $A \n";
+
+}
+
+if ( $A == $B){
+
+echo "O número $A é igual  o número $B \n";
+
+}
+
+?>

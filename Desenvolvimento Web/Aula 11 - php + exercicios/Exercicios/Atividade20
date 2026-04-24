@@ -1,0 +1,27 @@
+<?php
+//20. Crie um vetor com 10 números e exiba apenas os números pares.
+
+$vetor = [1,2,3,4,5,6,7,8,9,10];
+
+echo "\n******  VAMOS VER O ARRAY  E  VER QUAIS NÚMEROS SÃO PARES *******\n";
+
+
+foreach ($vetor as $lista) {
+    echo $lista . ",";
+}
+
+echo "\n ******************************\n";
+
+
+echo "\n Agora vamos ver quais números do Array são pares: \n";
+
+foreach ($vetor as $par) {
+    if ($par %2 == 0) {
+        $Npar[] = $par; 
+    }
+}
+
+
+foreach ($Npar as $lista2) {
+    echo $lista2 . ",";
+}

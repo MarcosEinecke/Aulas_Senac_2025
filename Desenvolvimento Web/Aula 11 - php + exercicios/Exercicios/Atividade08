@@ -1,0 +1,17 @@
+<?php
+//8.  Faça um for que calcule a soma dos números de 1 até 100.
+
+
+
+echo "******** SOMADOR DE 1 A 100  ********\n";
+
+$soma = 0;
+
+for ($i = 0; $i < 101; $i++) {
+    echo $i . ",";
+    echo "\n";
+    $soma = +$i;
+}
+
+
+echo "\n" . $soma ;

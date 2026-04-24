@@ -1,0 +1,18 @@
+<?php
+//21. Dado o vetor [10, 5, 8, 20, 15], encontre o maior número.
+
+$vetor = [10, 5, 8, 20, 15];
+
+echo "\n **************  VAMOS DESCOBRIR QUAL É O MAIOR NÚMERO DO ARRAY *************\n";
+
+
+foreach ($vetor as $lista) {
+    echo $lista . ",";
+}
+
+
+echo "\n ***************************************************************************************************\n";
+
+$maior = max($vetor);
+
+echo "O maior número é  ". $maior;

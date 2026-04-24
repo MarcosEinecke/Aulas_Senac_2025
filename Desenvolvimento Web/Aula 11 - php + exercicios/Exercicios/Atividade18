@@ -1,0 +1,19 @@
+<?php
+//Dado o vetor [2,4,6,8,10] ,calcule a soma de todos os elementos. 
+
+
+$vetor = [2, 4, 6, 8, 10];
+$soma = 0;
+
+foreach ($vetor as $print ) {
+    echo $print . ",";
+}
+
+for ($i = 0; $i < count($vetor); $i++) {
+
+    $soma += $vetor[$i];
+}
+
+
+echo "\n A soma dos valores é " . $soma;
+
