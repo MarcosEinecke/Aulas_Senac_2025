@@ -1,0 +1,17 @@
+<?php
+//8.  Mecanismo de Busca: Crie um script que percorra uma lista de nomes de arquivos 
+//e retorne apenas aqueles que terminam com a extensão ".jpg". 
+
+
+$tipoArquivos = ["foto1.jpg", "documento.pdf", "imagem.png", "foto2.jpg", "texto.txt"];
+
+
+var_dump($tipoArquivos);
+
+foreach ($tipoArquivos as $arquivo) {
+    if (substr($arquivo, -4) === ".jpg") {
+        echo $arquivo . "\n";
+    }
+}
+
+

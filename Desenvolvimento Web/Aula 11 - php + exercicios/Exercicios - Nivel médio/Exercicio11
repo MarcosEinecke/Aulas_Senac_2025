@@ -1,0 +1,17 @@
+<?php
+//11. Simulador de Juros: Um investimento rende 1% ao mês. Receba um valor inicial e 
+//mostre quanto o usuário terá mês a mês durante um período de um ano. 
+
+
+echo "\nDigite o valor inicial do investimento: "; 
+$valorInicial = readline();
+
+echo "\nMês\tValor do Investimento\n";
+for ($mes = 1; $mes <= 12; $mes++) {
+    $valorInicial *= 1.01; 
+    echo "$mes\t" . "R$ " . number_format($valorInicial, 2) . "\n";
+}
+
+
+
+

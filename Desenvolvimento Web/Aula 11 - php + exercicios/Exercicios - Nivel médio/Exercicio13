@@ -1,0 +1,38 @@
+<?php
+//13. Organizador de Fila: Receba uma lista de pessoas com suas idades. O sistema 
+//deve separar essa lista em duas: "Prioritário" (60 anos ou mais) e "Geral".
+
+
+echo  "\n ************** ORGANIZADOR DE FILA ************ \n\n";
+
+echo "Quantas pessoas estão na fila? ";
+$qtdPessoas = (int) readline();
+
+$prioritario = [];
+$geral = [];
+
+for ($i = 0; $i < $qtdPessoas; $i++) {
+    echo "\nDigite o nome da pessoa: ";
+    $nome = readline();
+    echo "\nDigite a idade da pessoa: ";
+    $idade = (int) readline();
+
+    if ($idade >= 60) {
+        $prioritario[] = $nome;
+    } else {
+        $geral[] = $nome;
+    }
+}
+
+
+echo "\nPessoas na fila prioritária:\n";
+foreach ($prioritario as $pessoa) {
+    echo "- $pessoa\n";
+}
+
+echo "\nPessoas na fila geral:\n";
+foreach ($geral as $pessoa) {
+    echo "- $pessoa\n";
+}
+
+

@@ -1,0 +1,23 @@
+<?php
+//16. O Gerente de Notas: Um professor quer inserir as notas de um aluno e receber não 
+//apenas a média, mas também a maior nota obtida entre todas as provas realizadas.
+
+
+echo "\n *****************   CONTROLE DE NOTAS   ***************** \n\n";
+echo "Digite o nome do aluno: ";
+$nome [] = readline();
+
+echo "Digite a quantidade de provas realizadas: ";
+$qtdProvas [] = readline();
+
+for ($i=0; $i < $qtdProvas[0]; $i++) { 
+    echo "\nDigite a nota da prova " . ($i+1) . ": ";
+    $notas [] = readline();
+}
+
+$media = array_sum($notas) / count($notas);
+$maiorNota = max($notas);
+
+
+echo "\nA média do aluno " . $nome[0] . " é: " . number_format($media, 2) . "\n";
+echo "A maior nota obtida entre todas as provas é: " . $maiorNota . "\n";

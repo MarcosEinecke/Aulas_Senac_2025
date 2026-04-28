@@ -1,0 +1,22 @@
+<?php
+//4.  Tabela de Jogos: Receba o nome de um time e exiba em qual grupo ele está em 
+//um campeonato fictício (Ex: Grêmio e Inter no Grupo A, Flamengo e Vasco no Grupo 
+//B). Se o time não for conhecido, exiba "Time não identificado".
+
+$time = "Inter";    
+
+switch ($time) {
+    case "Grêmio":
+    case "Inter":
+        echo "O time $time está no Grupo A.";
+        break;
+    case "Flamengo":
+    case "Vasco":
+        echo "O time $time está no Grupo B.";
+        break;
+    default:
+        echo "Time não identificado.";
+}
+
+
+

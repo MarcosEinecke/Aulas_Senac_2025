@@ -1,0 +1,21 @@
+<?php
+//19. Formatador de Telefone: Receba uma sequência de 11 números limpos e 
+//transforme-os no formato padrão: (XX) XXXXX-XXXX.
+
+
+echo "\n************ FORMATADOR DE TELEFONE ************\n\n";
+echo "Digite uma sequência de 11 números limpos: ";
+$telefone = (string)readline();
+
+if (strlen($telefone) == 11 && ctype_digit($telefone)) {
+    $ddd = substr($telefone, 0, 2);
+    $parte1 = substr($telefone, 2, 5);
+    $parte2 = substr($telefone, 7, 4);
+    
+    $telefoneFormatado = "($ddd) $parte1-$parte2";
+    echo "Telefone formatado: $telefoneFormatado\n";
+} else {
+    echo "Entrada inválida. Certifique-se de digitar exatamente 11 números limpos.\n";
+}
+
+

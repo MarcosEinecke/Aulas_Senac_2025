@@ -1,0 +1,37 @@
+<?php
+//7.  Filtro de Conteúdo: Dada uma lista de palavras (comentários de um site), verifique 
+//se a palavra "spam" ou "clickbait" aparece na lista e bloqueie o comentário se 
+//encontrar. 
+
+
+$palavras = [];
+echo "Digite os comentários (digite 'fim' para encerrar):\n";
+while (true) {
+    $comentario = readline("Comentário: ");
+    if (strtolower($comentario) === 'fim') {
+        break;
+    }
+    $palavras[] = $comentario;
+}
+
+$palavrasProibidas = ['spam', 'clickbait'];
+$comentariosBloqueados = [];
+foreach ($palavras as $comentario) {
+    foreach ($palavrasProibidas as $palavraProibida) {
+        if (stripos($comentario, $palavraProibida) !== false) {
+            $comentariosBloqueados[] = $comentario;
+            break;
+        }
+    }
+}
+
+if (!empty($comentariosBloqueados)) {
+    echo "\nComentários bloqueados por conterem palavras proibidas:\n";
+    foreach ($comentariosBloqueados as $comentario) {
+        echo "- $comentario\n";
+    }
+} else {
+    echo "\nNenhum comentário bloqueado. Todos os comentários estão limpos.\n";
+}
+
+

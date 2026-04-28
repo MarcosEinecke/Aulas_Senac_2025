@@ -1,0 +1,39 @@
+<?php
+//1.  O Analista de Crédito: Uma loja deseja automatizar a aprovação de empréstimos. 
+//O sistema deve receber o valor do salário e o valor da parcela. A regra é: a parcela 
+//não pode ultrapassar 30% do salário. Retorne se o crédito foi aprovado ou negado.
+
+
+$salario;
+$parcela;
+
+echo "\n*************   SIMULADOR DE EMPRÉSTIMOS   *************\n";
+
+echo "\n Quanto você recebe ? R$ ";
+$salario = readline();
+
+echo " Qual o valor da parcela que você pode pagar? R$ ";
+$parcela = readline();
+
+
+
+$total = 5; // Número total de pontos/etapas
+echo "\n Simulando: [";
+
+for ($i = 0; $i < $total; $i++) {
+    echo ".";
+    // Força a saída imediata no terminal
+    flush();
+    sleep(1); // Simula uma tarefa demorada
+}
+
+echo "] Concluído!\n";
+
+
+if ($parcela > 0.3 * $salario) {
+    echo "\n Que pena seu empréstimo foi REPROVADO.\n";
+}else {
+    echo "\n Parabéns seu empréstimo foi APROVADO.\n";
+}
+
+echo "\n ***************************************************************\n";

@@ -1,0 +1,17 @@
+<?php
+//14. Conversor de Medidas: Crie uma ferramenta que receba um valor em metros e 
+//apresente uma lista de conversões para centímetros, milímetros e quilômetros de 
+//uma só vez.
+
+echo "\n *********  CONVERSOR DE MEDIDAS ********* \n\n";
+
+echo "Digite um valor em metros: ";
+$metros = (float) readline();
+
+
+echo "\n *********** RESULTADOS ********* \n\n";
+
+echo "\n Valor em centímetros: " . ($metros * 100) . " cm";
+echo "\n Valor em milímetros: " . ($metros * 1000) . " mm";
+echo "\n Valor em quilômetros: " . ($metros / 1000) . " km";    
+

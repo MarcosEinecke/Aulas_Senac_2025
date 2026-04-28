@@ -1,0 +1,31 @@
+<?php
+//6.  O Contador de Passos: Um usuário quer saber quantos metros caminhou em uma 
+//semana. Receba uma lista com os passos de cada um dos 7 dias, calcule o total e 
+//converta para quilômetros (considere 1 passo = 0,8 metros).
+
+
+echo "*************  CONTADOR DE PASSOS  *************\n\n";
+
+$passos = [];
+
+echo "Digite o número de passos para cada um dos 7 dias:\n";
+$passos[] = readline("Dia 1: ");
+$passos[] = readline("Dia 2: ");    
+$passos[] = readline("Dia 3: ");
+$passos[] = readline("Dia 4: ");
+$passos[] = readline("Dia 5: ");
+$passos[] = readline("Dia 6: ");
+$passos[] = readline("Dia 7: ");
+
+$totalPassos = array_sum($passos);
+$metrosCaminhados = $totalPassos * 0.8; 
+$quilometrosCaminhados = $metrosCaminhados / 1000;
+
+echo "\nTotal de passos na semana: $totalPassos passos\n";
+echo "Total de metros caminhados: $metrosCaminhados metros\n";
+echo "Total de quilômetros caminhados: $quilometrosCaminhados quilômetros\n";
+
+
+
+
+

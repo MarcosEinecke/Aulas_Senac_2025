@@ -1,0 +1,40 @@
+<?php
+//20. Resumo de Carrinho: Dado um array onde cada item é um sub-array contendo 
+//[nome_item, preco, quantidade], calcule o valor total que o cliente deve 
+//pagar ao final da compra.
+
+echo "\n********* CARRINHO DE COMPRAS *********\n\n";
+
+echo "Digite o número de itens no carrinho: ";
+$numItens = (int)readline();
+
+$carrinho = [];
+
+echo "\nDigite os detalhes dos itens (nome, preço, quantidade):\n";
+for ($i = 0; $i < $numItens; $i++) {
+    echo "Item " . ($i + 1) . ": ";
+    $input = readline();
+    $item = explode(", ", $input);
+    
+    if (count($item) === 3) {
+        $carrinho[] = [
+            'nome' => $item[0],
+            'preco' => (float)$item[1],
+            'quantidade' => (int)$item[2]
+        ];
+    } else {
+        echo "Entrada inválida. Por favor, insira os detalhes no formato correto.\n";
+        $i--; 
+    }
+}
+
+$total = 0;
+foreach ($carrinho as $item) {
+    $total += $item['preco'] * $item['quantidade'];
+}
+echo "\nValor total a pagar: R$ " . number_format($total, 2) . "\n";
+
+
+
+
+

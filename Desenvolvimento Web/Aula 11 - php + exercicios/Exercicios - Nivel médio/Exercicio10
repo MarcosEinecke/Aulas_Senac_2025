@@ -1,0 +1,25 @@
+<?php
+//10. Gerador de Login: Receba o nome completo de uma pessoa e gere um "username" 
+//composto pela primeira letra do nome e o último sobrenome em letras minúsculas. 
+
+
+
+echo "\nDigite o nome completo: \n";
+$nomeCompleto = readline();
+
+if (!empty($nomeCompleto)) {
+    $partes = explode(" ", $nomeCompleto);
+    $primeiraLetra = strtolower($partes[0][0]);
+    $ultimoSobrenome = strtolower(end($partes));
+    $username = $primeiraLetra . $ultimoSobrenome;
+    echo "\nUsername gerado: " . $username . "\n";
+} else {
+    echo "\nNome completo não fornecido.\n";
+}
+
+
+
+
+
+
+

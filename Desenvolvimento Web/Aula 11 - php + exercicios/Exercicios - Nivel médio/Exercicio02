@@ -1,0 +1,20 @@
+<?php
+//2.  O Painel do Aeroporto: Você precisa exibir uma mensagem de saudação baseada 
+//na hora atual (formato 24h). Se for entre 05:00 e 11:59, "Bom dia"; entre 12:00 e 
+//17:59, "Boa tarde"; e após as 18:00, "Boa noite". 
+
+
+
+date_default_timezone_set('America/Sao_Paulo'); 
+
+$hora = date('H:i');
+
+echo $hora;
+
+if ( $hora >= '05:00' && $hora <= '11:59' ) {
+    echo "\nBom dia";
+} elseif ( $hora >= '12:00' && $hora <= '17:59' ) {
+    echo "\nBoa tarde";
+} else {
+    echo "\nBoa noite";
+}

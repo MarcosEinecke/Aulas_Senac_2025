@@ -1,0 +1,27 @@
+<?php
+//17. Sorteador de Prêmios: Crie um sistema que escolhe aleatoriamente um nome de 
+//uma lista de participantes e exibe: "O vencedor da rodada é: [Nome]".
+
+echo "\n************ SORTEADOR DE PRÊMIOS ************\n\n";
+echo "Digite o número de participantes: ";
+$numeroParticipantes = (int) readline();
+
+$participantes = [];
+
+echo "\nDigite os nomes dos participantes: \n";
+
+for ($i = 0; $i < $numeroParticipantes; $i++) {
+    echo "Participante " . ($i + 1) . ": ";
+    $nome = readline();
+    $participantes[] = $nome;
+}
+
+if (count($participantes) > 0) {
+    $numVencedor = array_rand($participantes);
+    $vencedor = $participantes[$numVencedor];
+    echo "\nO vencedor da rodada é: " . $vencedor . "\n";
+} else {
+    echo "\nNenhum participante foi adicionado.\n";
+}
+
+

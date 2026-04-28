@@ -1,0 +1,18 @@
+<?php
+//18. Calculadora de Idade Canina: Receba a idade de um cachorro e retorne a idade 
+//equivalente em anos humanos (para os dois primeiros anos, cada ano vale 10.5; 
+//depois disso, cada ano vale 4). 
+
+
+echo "\n*********** Calculadora de Idade Canina **********\n";
+echo "Digite a idade do cachorro: ";
+$idadeCachorro = (int) readline();
+
+if ($idadeCachorro <= 2) {
+    $idadeHumana = $idadeCachorro * 10.5;
+} else {
+    $idadeHumana = (2 * 10.5) + (($idadeCachorro - 2) * 4);
+}
+
+echo "A idade equivalente em anos humanos é: $idadeHumana anos.\n";
+

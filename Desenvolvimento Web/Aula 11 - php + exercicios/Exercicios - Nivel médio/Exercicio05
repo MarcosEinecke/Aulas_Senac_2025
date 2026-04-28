@@ -1,0 +1,24 @@
+<?php
+//5.  Calculadora de Frete: O frete custa R$ 50,00. Porém, se a compra for acima de R$ 
+//250,00, o frete é grátis. Se for acima de R$ 500,00, além do frete grátis, o cliente 
+//ganha 10% de desconto no valor total. 
+
+
+echo "\nDigite o valor total da compra: \n";
+$valorCompra = readline();
+
+$frete = 50.00;
+
+if ($valorCompra > 250) {
+    $frete = 0;
+}
+
+if ($valorCompra > 500) {
+    $desconto = $valorCompra * 0.10;
+    $valorFinal = $valorCompra - $desconto;
+} else {
+    $valorFinal = $valorCompra + $frete;
+}
+
+echo "\nValor final da compra: R$ " . number_format($valorFinal, 2, ',', '.') . "\n";
+

@@ -1,0 +1,22 @@
+<?php
+//3.  Controle de Estoque: Crie um sistema que recebe a quantidade atual de um 
+//produto e a quantidade mínima. Se o estoque atual for menor que o mínimo, o 
+//sistema deve alertar "Comprar Reposição"; caso contrário, "Estoque OK".
+
+
+
+echo "*******  CONTROLE DE ESTOQUE   ********";
+
+echo "\nDigite a quantidade atual do produto: ";
+$quantidade_atual = (int) readline();
+
+echo "\nDigite a quantidade mínima do produto: ";
+$quantidade_minima = (int) readline();
+
+if ($quantidade_atual < $quantidade_minima) {
+    echo "\nComprar Reposição";
+} else {
+    echo "\nEstoque OK";
+}
+
+

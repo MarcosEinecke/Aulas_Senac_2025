@@ -1,0 +1,17 @@
+<?php
+//9.  Relatório de Vendas: Receba uma lista de valores vendidos por um vendedor no 
+//mês. O sistema deve identificar qual foi a maior venda e qual foi a menor.
+
+
+echo "*************** RELATÓRIO DE VENDAS ***********\n";   
+
+$vendas = [1500, 2500, 3000, 1000, 2000];
+
+$maiorVenda = max($vendas);
+$menorVenda = min($vendas); 
+
+
+echo "\nA maior venda do mês foi: R$ " . number_format($maiorVenda, 2, ',', '.') . "\n";
+echo "\A menor venda do mês foi: R$ " . number_format($menorVenda, 2, ',', '.') . "\n";
+
+
