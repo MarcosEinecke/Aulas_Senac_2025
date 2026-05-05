@@ -1,0 +1,77 @@
+<?php
+// 3. Conta Bancária Simples (ContaBancaria) 
+// Objetivo: Manipular o saldo de uma conta. 
+// ●  Atributos: titular, saldo. 
+// ●  Métodos: depositar($valor) e sacar($valor). 
+// ●  Regra: No método sacar, verifique se o saldo é suficiente antes de subtrair.
+
+
+class ContaBancaria
+{
+
+    public string $titular;
+    public float $saldo;
+
+
+    function  depositar($valor)
+    {
+        $this->saldo += $valor;
+        echo "\nDepositando R$ $valor na conta de $this->titular. Saldo atual: R$ $this->saldo.\n";
+    }
+
+
+
+    function sacar($valor)
+    {
+
+
+        if ($valor > $this->saldo) {
+            echo "Não é possível sacar R$ $valor. Saldo insuficiente.\n";
+        } else {
+            $this->saldo -= $valor;
+            echo "\nSacando R$ $valor da conta de $this->titular. Saldo atual: R$ $this->saldo na conta.\n";
+        }
+    }
+}
+
+
+
+
+
+$ContaBancaria = new ContaBancaria();
+
+
+
+echo "\n *****************   CONTA BANCÁRIA  **********************   \n\n";
+
+
+echo "Qual o nome do titular da conta: ";
+$ContaBancaria->titular = readline();
+
+
+echo  "\n Qual é o seu saldo bancário? ";
+$ContaBancaria->saldo = (float)readline();
+
+
+
+echo "\n ************ VAMOS DEPOSITAR  ***********\n\n";
+
+echo "Qual o valor do deposito:";
+$valor = (float)readline();
+
+
+$ContaBancaria->depositar($valor);
+
+
+
+
+echo "\n\n ***************  VAMOS  SACAR  *************\n\n";
+
+echo "Qual o valor do seu saque: ";
+$valor = (float) readline();
+
+echo "\n";
+
+
+
+$ContaBancaria->sacar($valor);

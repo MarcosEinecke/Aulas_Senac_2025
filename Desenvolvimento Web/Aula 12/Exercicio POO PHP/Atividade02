@@ -1,0 +1,82 @@
+<?php
+// 2. Controle de Estoque (Produto)
+// Objetivo: Gerenciar a quantidade de itens em uma loja.
+// ● Atributos: nome, preco, quantidadeEmEstoque.
+// ● Métodos: adicionarEstoque($unidades) e removerEstoque($unidades).
+// ● Regra: O método de remover não pode deixar o estoque ficar negativo.
+
+
+
+
+class  Produto
+{
+
+    public $nome;
+    public float $preco;
+    public int $quantidadeEmEstoque;
+
+
+
+    function  adicionarEstoque($unidades)
+    {
+        $this->quantidadeEmEstoque += $unidades;
+        echo "\nAdicionando $unidades unidades ao estoque de $this->nome. Estoque atual: $this->quantidadeEmEstoque unidades.\n";
+    }
+
+
+
+
+    function removerEstoque($unidades)
+    {
+
+        if ($unidades > $this->quantidadeEmEstoque) {
+            echo "Não é possível remover $unidades unidades. Estoque insuficiente.\n";
+        } else {
+            $this->quantidadeEmEstoque -= $unidades;
+            echo "\nRemovendo $unidades unidades do estoque de $this->nome. Estoque atual: $this->quantidadeEmEstoque unidades.\n";
+        }
+    }
+}
+
+
+
+$produto = new Produto();
+
+
+
+echo "\n *****************   CONTROLE DE ESTOQUE **********************   \n\n";
+
+
+echo "Vamos adicionar um novo produto: ";
+$produto->nome = readline();
+
+echo "\n Qual é o preço do produto? R$";
+$produto->preco = readline();
+
+
+echo  "\n Quantas unidades tem em estoque? ";
+$produto->quantidadeEmEstoque = (int)readline();
+
+
+
+echo "\n ************ VAMOS ADICIONAR UNIDADES  ***********\n\n";
+
+echo "Quantas unidades você quer adicionar:";
+$unidades = (int)readline();
+
+
+$produto->adicionarEstoque($unidades);
+
+
+
+
+echo "\n\n ***************  VAMOS  REMOVER UNIDADES  *************\n\n";
+
+echo "Quantas unidades você quer remover: ";
+$unidades = (int) readline();
+
+echo "\n";
+
+
+
+$produto->removerEstoque($unidades);

@@ -1,0 +1,63 @@
+<?php
+
+// 5. Controle de Carro (Carro) 
+// Objetivo: Simular o estado de um veículo. 
+// ●  Atributos: marca, modelo, ligado (booleano). 
+// ●  Métodos: ligar(), desligar() e status(). 
+// ●  Regra: O método status() deve dizer se o carro está "Pronto para rodar" ou 
+// "Desligado".
+
+
+class Carro
+{
+
+    public $marca;
+    public $modelo;
+    public bool $ligado;
+
+    public function ligar()
+    {
+        $this->ligado = true;
+    }
+
+    public function desligar()
+    {
+        $this->ligado = false;
+    }
+
+    public function status()
+    {
+        if ($this->ligado) {
+            return "Pronto para rodar";
+        } else {
+            return "Desligado";
+        }
+    }
+}
+
+
+
+
+$carro1 = new Carro();
+
+echo "\n ************* CONCESSIONÁRIA ************* \n";
+
+echo "Marca: ";
+$carro1->marca = readline();
+
+echo "Modelo: ";
+$carro1->modelo = readline();
+
+$carro1->desligar(); 
+
+echo "\nStatus: " . $carro1->status() . "\n";
+echo "Deseja ligar o carro? (s/n): ";
+$opcao = readline();
+if ($opcao === 's') {
+    $carro1->ligar();
+    echo "Carro ligado. " . $carro1->status() . "\n";
+} else {
+    echo "Carro permanece desligado. " . $carro1->status() . "\n";
+}
+
+

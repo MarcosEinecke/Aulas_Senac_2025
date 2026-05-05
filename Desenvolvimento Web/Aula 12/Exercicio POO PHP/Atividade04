@@ -1,0 +1,39 @@
+<?php   
+
+// 4. Carrinho de Compras (ItemCarrinho) 
+// Objetivo: Calcular o valor de um item específico no carrinho. 
+// ●  Atributos: nomeProduto, valorUnitario, quantidade. 
+// ●  Método: calcularTotalItem() que retorna o resultado de valorUnitario * 
+// quantidade.
+
+
+class ItemCarrinho {
+    public $nomeProduto;
+    public $valorUnitario;
+    public $quantidade;
+
+
+
+    public function calcularTotalItem() {
+        return $this->valorUnitario * $this->quantidade;
+    }
+}
+
+
+
+$item1 = new ItemCarrinho();
+
+echo "\nDigite o nome do produto: ";
+$item1->nomeProduto = readline();
+
+echo "Digite o valor unitário do produto: ";
+$item1->valorUnitario = readline();
+
+
+echo "Digite a quantidade do produto: ";
+$item1->quantidade = readline();
+
+$totalItem = $item1->calcularTotalItem();
+
+echo "\nO total do item " . $item1->nomeProduto . " é: R$ " . number_format($totalItem, 2, ',', '.');
+
