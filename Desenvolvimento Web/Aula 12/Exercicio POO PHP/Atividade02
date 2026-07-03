@@ -29,28 +29,36 @@ class  Produto
     function removerEstoque($unidades)
     {
 
+        echo "\nRemovendo $unidades unidades do estoque de $this->nome. Estoque atual: $this->quantidadeEmEstoque unidades.\n";
+
+
         if ($unidades > $this->quantidadeEmEstoque) {
             echo "Não é possível remover $unidades unidades. Estoque insuficiente.\n";
         } else {
             $this->quantidadeEmEstoque -= $unidades;
-            echo "\nRemovendo $unidades unidades do estoque de $this->nome. Estoque atual: $this->quantidadeEmEstoque unidades.\n";
+            echo "Removido $unidades unidades. Estoque restante: $this->quantidadeEmEstoque unidades.\n";
         }
     }
 }
 
-
+function limparTela(): void
+{
+    if (strncasecmp(PHP_OS, 'WIN', 3) === 0) {
+        system('cls');
+    } else {
+        system('clear');
+    }
+}
 
 $produto = new Produto();
-
-
 
 echo "\n *****************   CONTROLE DE ESTOQUE **********************   \n\n";
 
 
-echo "Vamos adicionar um novo produto: ";
+echo "Vamos adicionar um novo produto:  ";
 $produto->nome = readline();
 
-echo "\n Qual é o preço do produto? R$";
+echo "\n Qual é o preço do produto? R$  ";
 $produto->preco = readline();
 
 
@@ -61,22 +69,10 @@ $produto->quantidadeEmEstoque = (int)readline();
 
 echo "\n ************ VAMOS ADICIONAR UNIDADES  ***********\n\n";
 
-echo "Quantas unidades você quer adicionar:";
+echo "Quantas unidades você quer adicionar :";
 $unidades = (int)readline();
 
 
 $produto->adicionarEstoque($unidades);
 
-
-
-
-echo "\n\n ***************  VAMOS  REMOVER UNIDADES  *************\n\n";
-
-echo "Quantas unidades você quer remover: ";
-$unidades = (int) readline();
-
-echo "\n";
-
-
-
-$produto->removerEstoque($unidades);
+echo "\n Estoque: " . $produto->quantidadeEmEstoque;
